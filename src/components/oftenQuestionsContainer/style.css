@@ -1,0 +1,56 @@
+.oftenQuestionsSection{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oftenQuestionsSection .oftenQuestions{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.questionContainerDiv{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    gap: 2px;
+}
+
+.questionContainerDiv .questionTitle{
+    height: 95px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.questionContainerDiv .questionTitle:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+.questionContainerDiv .questionContent{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color:  rgb(44, 44, 44);
+    padding: 20px;
+    transition: .2s all;
+}

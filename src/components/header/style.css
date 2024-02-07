@@ -1,0 +1,64 @@
+header{
+    color: white;
+    background-color: transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 8px 160px;
+}
+
+header img{
+    width: 150px;
+}
+
+.languageOptions{
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 140px;
+    opacity: 0.9;
+}
+
+.languageOptions option{
+    background-color: white;
+    color: black;
+    outline: none;
+}
+
+header .netflixLogo{
+    color: red !important;
+    font-size: 3rem;
+}
+
+.leftHeaderNav{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftHeaderNav button{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.leftHeaderNav button:hover{
+    background-color: rgb(145, 3, 3);
+}
