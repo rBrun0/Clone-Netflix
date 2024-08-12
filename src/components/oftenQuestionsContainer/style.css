@@ -24,6 +24,7 @@
     color: white;
     padding: 5px;
     gap: 2px;
+    transition:  .2s all;
 }
 
 .questionContainerDiv .questionTitle{

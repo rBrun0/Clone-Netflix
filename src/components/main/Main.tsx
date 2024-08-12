@@ -29,7 +29,7 @@ const Main = () => {
         <div className='textContainer'>
           <h3>A Netflix que você adora por apenas R$ 18,90.</h3>
           <p>Assine o plano Padrão com anúncios.</p>
-          <p><a href="#">Saiba Mais</a></p>
+          <p><a href="#" style={{color: "white"}}>Saiba Mais</a></p>
         </div>
       </div>
     </div>

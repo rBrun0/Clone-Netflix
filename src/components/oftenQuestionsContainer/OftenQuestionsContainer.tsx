@@ -23,21 +23,25 @@ const OftenQuestionsContainer = () => {
 }
 ];
 
-const [questionOpen, setQuestionOpen] = useState(false)
+const [questionOpen, setQuestionOpen] = useState<number | null>(null)
 
 
-const openQuestion = () => {
-  setQuestionOpen(!questionOpen)
+const openQuestion = (index: number) => {
+  if(questionOpen == index){
+    setQuestionOpen(null)
+    console.log(questionOpen)
+  }
+  setQuestionOpen(index)
 }
 
   return (
     <section className="oftenQuestionsSection">
       <h1 className="oftenQuestions">Perguntas Frequentes</h1>
      {
-        oftenQuestion.map((quest) => (
+        oftenQuestion.map((quest, index) => (
           <div className="questionContainerDiv">
-            <h1 className="questionTitle" onClick={openQuestion}>{quest.question}</h1>
-          <p className="questionContent" style={{height: questionOpen? "auto" : "0", display: questionOpen ? "flex" : "none"}}>{quest.content}</p>
+            <h1 className="questionTitle" onClick={() => openQuestion(index)}>{quest.question}</h1>
+          <p className="questionContent" style={{height: questionOpen == index ? "auto" : "0", display: questionOpen == index ? "flex" : "none"}}>{quest.content}</p>
           </div>
         ))
       }
